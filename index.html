@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://drive.google.com/uc?export=view&id=1Cm-Q3d1Z5ji96myT02V_9tnyId4_0UaA">
+    <link rel="icon" type="image/x-icon"
+        href="https://drive.google.com/uc?export=view&id=1Cm-Q3d1Z5ji96myT02V_9tnyId4_0UaA">
     <title>Soumojit Shome | Links</title>
 
     <meta name="description" content="Important Links">
-    <meta itemprop="image"
-        content="https://drive.google.com/uc?export=view&id=1Cm-Q3d1Z5ji96myT02V_9tnyId4_0UaA">
+    <meta itemprop="image" content="https://drive.google.com/uc?export=view&id=1Cm-Q3d1Z5ji96myT02V_9tnyId4_0UaA">
 
     <meta property="og:url" content="implinkssoumojit.vercel.app">
     <meta property="og:type" content="website">
@@ -42,7 +42,7 @@
             height: 100vh;
             background-image: linear-gradient(45deg, #800080 0%,
                     #E90207 46%,
-                    #ff8c00 100%);
+                    #ce7100 100%);
         }
 
         .glass {
@@ -188,7 +188,7 @@
             font-size: 1.2em;
         }
 
-        #butt {
+        .butt {
             margin-top: 5vh;
             /* border: 10px solid black; */
             display: flex;
@@ -228,7 +228,7 @@
             animation: glowing 20s linear infinite;
             transition: opacity .3s ease-in-out;
             border-radius: 10px;
-            opacity: 0;
+            /* opacity: 0; */
         }
 
         @keyframes glowing {
@@ -246,9 +246,19 @@
         }
 
         /* hover */
-        .btn:hover::before {
+        /* .btn:hover::before {
             opacity: 1;
         }
+        .btn:hover::before {
+            opacity: 1;
+        } */
+
+        .btn:hover::after{
+            background-image: linear-gradient(45deg, #ff0cff 0%,
+                    #ff494c 46%,
+                    #ff930f 100%);
+        }
+
 
         .btn:active:after {
             background: transparent;
@@ -267,15 +277,18 @@
             margin-top: 20vh;
             margin-bottom: 0;
             text-align: center;
+            font-size: 2em;
         }
 
         .subhead {
+            padding-top: 8px;
             color: white;
             display: flex;
             justify-content: center;
             margin: 20px;
             margin-top: 2vh;
             margin-bottom: 0;
+            font-size: 1.6em;
         }
     </style>
 </head>
@@ -287,15 +300,20 @@
 
                 <h1 class="myname">Designed by Soumojit Shome
                 </h1>
-                <h3 class="subhead">Important Links</h3>
-                <div id="butt">
+                <h3 class="subhead">Important Links (New) :</h3>
+                <div class="butt">
 
                     <a href="https://forms.gle/kqKzZfrM1BD2Ptog8" target="__main">
                         <button class="btn">Quiz</button>
                     </a>
 
+                </div>
+
+                <h3 class="subhead">Other Links (Developer Details) :</h3>
+                <div class="butt">
+                    
                     <a href="https://www.linkedin.com/in/soumojit-shome-90a190241" target="__main">
-                        <button class="btn">linkedIn</button>
+                        <button class="btn">LinkedIn</button>
                     </a>
 
                     <a href="https://youtube.com/@soumojitshome" target="__main">
@@ -316,6 +334,10 @@
 
                     <a href="https://maps.app.goo.gl/KegJteExQ4DeM5a8A" target="__main">
                         <button class="btn">Google Maps</button>
+                    </a>
+
+                    <a href="mailto:soumojit.shome@gmail.com" target="__main">
+                        <button class="btn">Send Mail</button>
                     </a>
 
                 </div>
