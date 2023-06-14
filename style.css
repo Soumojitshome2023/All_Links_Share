@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* overflow: scroll; */
+    /* box-sizing: border-box; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(rgb(151, 151, 151), rgb(109, 3, 170));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: #ff590c; */
+    background-image: linear-gradient(rgb(14, 110, 255), rgb(230, 255, 9));
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(rgb(239, 255, 14), rgb(14, 110, 255));
+}
+
+body {
+    background-color: #800080;
+
+}
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #800080 0%,
+            #b90003 46%,
+            #ce7100 100%);
+}
+
+.glass {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* overflow: scroll; */
+}
+
+.myimg {
+    /* border: 10px solid black; */
+    width: 100vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#mypic {
+    border-radius: 50%;
+    border: 2px solid purple;
+    width: calc(120px + 3vw);
+}
+
+#mypic:hover {
+    box-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+}
+
+#cont {
+    /* border: 10px solid black; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    position: absolute;
+    overflow: scroll;
+}
+
+.glass li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: spin 5s linear infinite;
+    bottom: -150px;
+}
+
+.glass li:nth-child(1) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.glass li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.glass li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.glass li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.glass li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.glass li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.glass li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.glass li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.glass li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.glass li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+
+
+/* button */
+.btn {
+    margin: 10px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.butt {
+    /* border: 5px solid black; */
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+    /* border: 10px solid black; */
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* glow */
+.btn::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #FF0000, #FF7300, #FFFB00, #48FF00,
+            #00FFD5, #002BFF, #FF00C8, #FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    /* opacity: 0; */
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* hover */
+/* .btn:hover::before {
+    opacity: 1;
+}
+.btn:hover::before {
+    opacity: 1;
+} */
+
+.btn:hover::after {
+    background-image: linear-gradient(45deg, #ff0cff 0%,
+            #ff494c 46%,
+            #ff930f 100%);
+}
+
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:active {
+    color: #000;
+    font-weight: bold;
+}
+
+.myname {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 3vh;
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: calc(25px + 1vw);
+}
+
+.myname:hover {
+    text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+    ;
+}
+
+.subhead {
+    /* border: 5px solid black; */
+    padding-top: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    font-size: calc(20px + 1.3vw);
+}
+
+.subhead:hover {
+    text-shadow: 0 0 7px #fff,
+
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+    ;
+}
