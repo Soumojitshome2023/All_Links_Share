@@ -39,9 +39,12 @@ body {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(45deg, #800080 0%,
+    /* background-image: linear-gradient(45deg, #800080 0%,
             #b90003 46%,
-            #ce7100 100%);
+            #ce7100 100%); */
+    background-image: linear-gradient(45deg, #020202 0%,
+            #747474 46%,
+            #2e2e2e 100%);
 }
 
 .glass {
