@@ -132,30 +132,6 @@
             <li></li>
         </ul>
     </div>
-    <script>
-        // Function to check if the browser supports the "Add to Home Screen" feature
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        // Function to show a prompt to add the shortcut
-        function showAddToHomeScreenPrompt() {
-            if (isMobile() && window.navigator.standalone === undefined) {
-                // Show a prompt to the user
-                if (confirm("Add this web app to your home screen for quick access?")) {
-                    // User clicked 'OK', show instructions to add to home screen
-                    if (window.addToHomeScreen) {
-                        // For browsers that support the BeforeInstallPromptEvent API
-                        window.addToHomeScreen();
-                        alert("Done");
-                    }
-                }
-            }
-        }
-
-        // Call the function on page load
-        showAddToHomeScreenPrompt();
-    </script>
 </body>
 
 </html>
