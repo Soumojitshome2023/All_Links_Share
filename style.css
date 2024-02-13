@@ -11,7 +11,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 /* Track */
@@ -30,10 +30,10 @@ html {
     background-image: linear-gradient(rgb(239, 255, 14), rgb(14, 110, 255));
 }
 
-body {
+/* body {
     background-color: #800080;
 
-}
+} */
 
 .bg {
     position: fixed;
@@ -345,4 +345,12 @@ a {
         0 0 102px #bc13fe,
         0 0 151px #bc13fe;
     ;
+}
+
+
+
+@media only screen and (max-width: 350px) {
+    .btn {
+        width: 80vw;
+    }
 }
