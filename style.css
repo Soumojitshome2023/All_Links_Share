@@ -10,24 +10,25 @@ html {
     /* box-sizing: border-box; */
 }
 
+
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-image: linear-gradient(rgb(151, 151, 151), rgb(109, 3, 170));
+    background-color: #2e2e2e;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     /* background: #ff590c; */
-    background-image: linear-gradient(rgb(14, 110, 255), rgb(230, 255, 9));
+    background-color: #747474;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(rgb(239, 255, 14), rgb(14, 110, 255));
+    background-color: #000000;
 }
 
 /* body {
@@ -93,6 +94,10 @@ html {
     padding-bottom: 20px;
     position: absolute;
     overflow: scroll;
+}
+
+#OthersLinksBox {
+    margin-bottom: 150px;
 }
 
 .glass li {
