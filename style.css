@@ -69,7 +69,7 @@ html {
 
 #mypic {
     border-radius: 50%;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: calc(120px + 3vw);
 }
 
@@ -197,21 +197,6 @@ html {
 }
 
 
-
-/* button */
-.btn {
-    margin: 10px;
-    padding: 15px 20px;
-    border: none;
-    outline: none;
-    color: #FFF;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 12px;
-    font-size: 1.1em;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -220,48 +205,17 @@ a {
 
 .butt {
     /* border: 5px solid black; */
-    margin-top: 5vh;
-    margin-bottom: 20vh;
-    /* border: 10px solid black; */
     display: flex;
     justify-content: center;
+    align-items: center;
     /* margin: auto; */
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
 
 }
 
-.btn::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
 
-/* glow */
-.btn::before {
-    content: "";
-    background: linear-gradient(45deg,
-            #FF0000, #FF7300, #FFFB00, #48FF00,
-            #00FFD5, #002BFF, #FF00C8, #FF0000);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 600%;
-    z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-    /* opacity: 0; */
-}
+
 
 @keyframes glowing {
     0% {
@@ -275,30 +229,6 @@ a {
     100% {
         background-position: 0 0;
     }
-}
-
-/* hover */
-/* .btn:hover::before {
-    opacity: 1;
-}
-.btn:hover::before {
-    opacity: 1;
-} */
-
-.btn:hover::after {
-    background-image: linear-gradient(45deg, #ff0cff 0%,
-            #ff494c 46%,
-            #ff930f 100%);
-}
-
-
-.btn:active:after {
-    background: transparent;
-}
-
-.btn:active {
-    color: #000;
-    font-weight: bold;
 }
 
 .myname {
@@ -348,9 +278,59 @@ a {
 }
 
 
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    max-width: 400px;
+    min-width: 250px;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+    margin: 5px;
+}
 
-@media only screen and (max-width: 350px) {
-    .btn {
-        width: 80vw;
-    }
+.button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+    color: #000;
+}
+
+.button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
 }
