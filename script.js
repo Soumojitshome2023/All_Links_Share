@@ -20,13 +20,18 @@ const LinkArray = [
         "Type": "Imp"
     },
     {
-        "Title": "Other Links Page",
-        "Link": "https://implinkssoumojit.vercel.app",
+        "Title": "About Page",
+        "Link": "https://soumojitshomeblog.vercel.app/about/",
+        "Type": "Other"
+    },
+    {
+        "Title": "Google Developer Profile",
+        "Link": "https://g.dev/soumojitshome2023/",
         "Type": "Other"
     },
     {
         "Title": "Blog Web Page",
-        "Link": "https://soumojitshome-blog-web.vercel.app/",
+        "Link": "https://soumojitshomeblog.vercel.app/blogs/",
         "Type": "Imp"
     },
     {
