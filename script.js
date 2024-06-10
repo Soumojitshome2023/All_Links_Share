@@ -1,5 +1,10 @@
 const LinkArray = [
     {
+        "Title": "WhatsApp",
+        "Link": "https://api.whatsapp.com/send/?phone=9062300500&text=Heyy:",
+        "Type": "Other"
+    },
+    {
         "Title": "LinkedIn",
         "Link": "https://www.linkedin.com/in/soumojit-shome",
         "Type": "Other"
@@ -15,24 +20,39 @@ const LinkArray = [
         "Type": "Other"
     },
     {
+        "Title": "Instagram",
+        "Link": "https://www.instagram.com/soumojit_shome/",
+        "Type": "Other"
+    },
+    {
+        "Title": "Threads",
+        "Link": "https://www.threads.net/@soumojit_shome",
+        "Type": "Other"
+    },
+    {
+        "Title": "Twitter(X)",
+        "Link": "https://x.com/soumojit_shome/",
+        "Type": "Other"
+    },
+    {
         "Title": "Portfolio Website",
         "Link": "https://soumojitshome.vercel.app",
         "Type": "Imp"
     },
     {
-        "Title": "About Page",
-        "Link": "https://soumojitshomeblog.vercel.app/about/",
-        "Type": "Other"
-    },
-    {
-        "Title": "Google Developer Profile",
-        "Link": "https://g.dev/soumojitshome2023/",
+        "Title": "Social Media",
+        "Link": "https://soumojitshomeblog.vercel.app/about/#%E2%9C%A8-social-media/",
         "Type": "Other"
     },
     {
         "Title": "Blog Web Page",
         "Link": "https://soumojitshomeblog.vercel.app/blogs/",
         "Type": "Imp"
+    },
+    {
+        "Title": "About Page",
+        "Link": "https://soumojitshomeblog.vercel.app/about/",
+        "Type": "Other"
     },
     {
         "Title": "GeeksforGeeks",
@@ -65,6 +85,11 @@ const LinkArray = [
         "Type": "Other"
     },
     {
+        "Title": "Google Developer Profile",
+        "Link": "https://g.dev/soumojitshome2023/",
+        "Type": "Other"
+    },
+    {
         "Title": "Peerlist",
         "Link": "https://peerlist.io/soumojit_shome",
         "Type": "Other"
@@ -81,7 +106,7 @@ const LinkArray = [
     },
     {
         "Title": "Resume",
-        "Link": "https://drive.google.com/file/d/11Q2jRHf40tcqbG9fF_H4CdAWA4G1ikXL/view?usp=drive_link",
+        "Link": "https://soumojitshomeblog.vercel.app/about/#%E2%9C%A8-resume",
         "Type": "Imp"
     }
 ]
