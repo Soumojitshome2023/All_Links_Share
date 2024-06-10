@@ -31,7 +31,7 @@ const LinkArray = [
     },
     {
         "Title": "Twitter(X)",
-        "Link": "https://x.com/soumojit_shome/",
+        "Link": "https://x.com/soumojit_shome",
         "Type": "Other"
     },
     {
@@ -41,7 +41,7 @@ const LinkArray = [
     },
     {
         "Title": "Social Media",
-        "Link": "https://soumojitshomeblog.vercel.app/about/#%E2%9C%A8-social-media/",
+        "Link": "https://soumojitshomeblog.vercel.app/about/#%E2%9C%A8-social-media",
         "Type": "Other"
     },
     {
