@@ -1,7 +1,7 @@
 const LinkArray = [
     {
         "Title": "WhatsApp",
-        "Link": "https://api.whatsapp.com/send/?phone=9062300500&text=Heyy:",
+        "Link": "https://api.whatsapp.com/send/?phone=9062300500&text=Hey",
         "Type": "Other"
     },
     {
