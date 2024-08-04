@@ -41,7 +41,7 @@ const LinkArray = [
     },
     {
         "Title": "Social Media",
-        "Link": "https://soumojitshomeblog.vercel.app/about/#%E2%9C%A8-social-media",
+        "Link": "https://soumojitshomeblog.vercel.app/about/#social-media",
         "Type": "Other"
     },
     {
@@ -106,7 +106,7 @@ const LinkArray = [
     },
     {
         "Title": "Resume",
-        "Link": "https://soumojitshomeblog.vercel.app/about/#%E2%9C%A8-resume",
+        "Link": "https://drive.google.com/file/d/1YHGb6EPhPRp3Ua9GklPlqrdqcJ3a54oI/view",
         "Type": "Imp"
     }
 ]
