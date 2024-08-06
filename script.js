@@ -95,6 +95,11 @@ const LinkArray = [
         "Type": "Other"
     },
     {
+        "Title": "Medium",
+        "Link": "https://medium.com/@soumojitshome2021",
+        "Type": "Other"
+    },
+    {
         "Title": "Projects",
         "Link": "https://soumojitshomeblog.vercel.app/projects/",
         "Type": "Imp"
