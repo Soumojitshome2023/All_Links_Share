@@ -70,16 +70,6 @@ const LinkArray = [
         "Type": "Other"
     },
     {
-        "Title": "LinkTree",
-        "Link": "https://linktr.ee/soumojitshome",
-        "Type": "Other"
-    },
-    {
-        "Title": "Holopin",
-        "Link": "https://www.holopin.io/@soumojitshome2023#",
-        "Type": "Other"
-    },
-    {
         "Title": "Google Cloud",
         "Link": "https://www.cloudskillsboost.google/public_profiles/987a5721-fedc-48e5-a9eb-f19e813782bd",
         "Type": "Other"
@@ -87,16 +77,6 @@ const LinkArray = [
     {
         "Title": "Google Developer Profile",
         "Link": "https://g.dev/soumojitshome2023/",
-        "Type": "Other"
-    },
-    {
-        "Title": "Peerlist",
-        "Link": "https://peerlist.io/soumojit_shome",
-        "Type": "Other"
-    },
-    {
-        "Title": "Medium",
-        "Link": "https://medium.com/@soumojitshome2021",
         "Type": "Other"
     },
     {
@@ -111,7 +91,7 @@ const LinkArray = [
     },
     {
         "Title": "Resume",
-        "Link": "https://drive.google.com/file/d/1YHGb6EPhPRp3Ua9GklPlqrdqcJ3a54oI/view",
+        "Link": "https://soumojitshome.vercel.app/resume",
         "Type": "Imp"
     }
 ]
